@@ -1,3 +1,11 @@
+// Program: Array Sorting using Pipes and fork()
+// Description: Parent passes array to child, child sorts using Bubble Sort,
+//              sends sorted array back to parent via pipes.
+// Author: Shehaan
+// OS: Ubuntu
+// Course: Operating Systems Lab (C Programming)
+// Date: 2025
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
