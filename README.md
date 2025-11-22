@@ -20,3 +20,16 @@ Multiple pipes (p1, p2, p3, p4) for sending and receiving data.
 Each child receives its half via a pipe, computes the minimum, and sends the result back.
 Parent waits for both children using waitpid() and prints both minimums.
 Demonstrates advanced IPC + multi-process computation.
+# ______________________________________________________
+
+# 3. Child 1 Computes SUM, Child 2 Computes MAX (Using Pipes & fork())
+This program demonstrates parallel computation using two child processes and multiple pipes.
+The parent sends the entire array to both children.
+
+# Features
+Multi–process computation using fork().
+Four pipes used for IPC: p1, p2, p3, p4.
+Child 1: calculates sum
+Child 2: calculates maximum
+Parent receives results and displays them.
+Demonstrates clean pipe usage + process synchronization
